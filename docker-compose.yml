@@ -1,0 +1,9 @@
+---
+services:
+  sber_test_app:
+    container_name: sber_test_app
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MAPPING_TTL=300
